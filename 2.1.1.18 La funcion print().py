@@ -5,12 +5,12 @@ No cambies nada en la segunda invocación de print().
 
 Salida Esperada
 Fundamentos***Programación***en...Python
-
-
-
-print("Fundamentos","Programación","en")
-print("Python")
 """
+
+
+#print("Fundamentos","Programación","en")
+#print("Python")
+
 
 print("Fundamentos","Programación","en", sep="***", end="...")
 print("Python")
