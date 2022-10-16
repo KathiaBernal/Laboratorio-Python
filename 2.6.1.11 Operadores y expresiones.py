@@ -14,13 +14,11 @@ Entrada de muestra:
 59
 Salida esperada: 13:16
 
-
 Entrada de muestra:
 23
 58
 642
 Salida esperada: 10:40
-
 
 Entrada de muestra:
 0
@@ -28,3 +26,12 @@ Entrada de muestra:
 2939
 Salida esperada: 1:0
 """
+
+hour = int(input("Hora de inicio (horas): "))
+mins = int(input("Minuto de inicio (minutos): "))
+dura = int(input("Duración del evento (minutos): "))
+
+# Escribe tu código aqui.
+minutes = (mins + dura)%60
+hours = (hour + (mins + dura)//60)%24
+print(hours, ":", minutes)
