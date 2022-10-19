@@ -11,13 +11,22 @@ La idea detrás de esto es que agregar la palabra Mississippi a un número al co
 Tu tarea es muy simple aquí: escribe un programa que use un bucle for para "contar de forma mississippi" hasta cinco. Habiendo contado hasta cinco, el programa debería imprimir en la pantalla el mensaje final "¡Listos o no, ahí voy!"
 
 Utiliza el esqueleto que hemos proporcionado en el editor.
+
+Salida esperada
+1 Mississippi
+2 Mississippi
+3 Mississippi
+4 Mississippi
+5 Mississippi
 """
 
 import time
 
     # Escribe un bucle for que cuente hasta cinco.
+for contar in range (1, 6):
     # Cuerpo del bucle: imprime el número de iteración del bucle y la palabra "Mississippi".
+    print(contar,"Mississippi")
     # Cuerpo del bucle - usar: time.sleep (1)
-
+    time.sleep (1)
 # Escribe una función de impresión con el mensaje final.
-
+print("¡Listos o no, ahí voy!")
