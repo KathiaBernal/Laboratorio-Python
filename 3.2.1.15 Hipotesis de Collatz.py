@@ -1,10 +1,10 @@
 """
 En 1937, un matemático alemán llamado Lothar Collatz formuló una hipótesis intrigante (aún no se ha comprobado) que se puede describir de la siguiente manera:
 
-Toma cualquier número entero que no sea negativo y que no sea cero y asígnale el nombre c0.
-Si es par, evalúa un nuevo c0 como c0 Ã· 2.
-De lo contrario, si es impar, evalúe un nuevo  c0  como 3 Ã c0 + 1.
-Si c0 â  1, salta al punto 2.
+1. Toma cualquier número entero que no sea negativo y que no sea cero y asígnale el nombre c0.
+2. Si es par, evalúa un nuevo c0 como c0 / 2.
+3. De lo contrario, si es impar, evalúe un nuevo  c0  como 3 * c0 + 1.
+4. Si c0 !=  1, salta al punto 2.
 La hipótesis dice que, independientemente del valor inicial de c0, el valor siempre tiende a 1.
 
 Por supuesto, es una tarea extremadamente compleja usar una computadora para probar la hipótesis de cualquier número natural (incluso puede requerir inteligencia artificial), pero puede usar Python para verificar algunos números individuales. Tal vez incluso encuentres el que refutaría la hipótesis.
@@ -112,3 +112,22 @@ Salida esperada:
 1
 pasos = 62
 """
+
+c0 = int(input("Ingresa un número mayor a cero: ")) #Ejemplo: 11
+
+if c0 < 1: #11 sí es mayor que 1
+    print("No es un número mayor a cero")
+else:
+    
+    pasos = 0
+                        #Así que se ejecuta el while
+    while c0 != 1: #Mientras 11 no sea igual a 1:
+        if c0 % 2 == 0: #No es par, se va al else
+            c0 = c0 // 2
+        else: #impar
+            c0 = 3 * c0 + 1 # 3 * 11 + 1 = 34
+        print(c0) #Imprime el 34 y vuelve a hacer el proceso ... 
+        pasos += 1 #Paso número 1: 34, va aumentando de 1 en 1
+    print("pasos =", pasos) #Imprime el total de pasos ejecutados
+
+
