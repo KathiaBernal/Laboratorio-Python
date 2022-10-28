@@ -27,12 +27,12 @@ Entrada de muestra: 2
 Salida esperada: La altura de la pirámide es: 1
 """
 
-blocks = int(input("Ingresa el número de bloques: "))
+blocks = int(input("Ingresa el número de bloques: ")) #Ejemplo: 20
 
 # Escribe tu código aquí.
 
 height = 0
-while blocks > height:
-    height += 1
-    blocks -= height
-print("La altura de la pirámide:", height)
+while blocks > height: # 20 > 0 || 19 > 1 || 17 > 2 || 14 > 3 || 10 > 4 || 5 no es mayor que 5, no es posible continuar el bucle.
+    height += 1 # ALTURA AUMENTA 1 EN CADA BUCLE: 0 + 1 = 1 || 1 + 1 = 2 || 2 + 1 = 3 || 3 + 1 = 4 || 4 + 1 = 5 
+    blocks -= height # LOS BLOQUES VAN DISMINUYENDO CONFORME AUMENTA LA ALTURA: 20 - 1 = 19 - 2 = 17 - 3 = 14 - 4 = 10 - 5 = 5
+print("La altura de la pirámide:", height) # 1 || 2 || 3 || 4 || 5 || EN TOTAL SON CINCO CAPAS 
