@@ -48,6 +48,6 @@ for letter in user_word:
     elif letter == "U":
         continue
     else:
-        word_without_vowels += letter #Las letras no consumidas se concatenan a la cadena vacía
+        word_without_vowels += letter #Las letras no consumidas se concatenan a la cadena vacía de arriba
 # Imprimir la palabra asignada a word_without_vowels.
 print(word_without_vowels)
